@@ -7,12 +7,12 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p>Welcome to the Dynasty Fantasy Football League, where strategy meets legacy! Founded in 2024 by the visionary commissioner Ace24T, our league boasts ten dedicated managers who each bring their unique approach to building a championship-caliber team.</p>
+  <p>Whether you’re a shrewd tactician focused on immediate glory or a forward-thinker laying the groundwork for future success, this is the ultimate playground for fantasy football enthusiasts.</p>
+  <p>In our league, it’s not just about selecting the best players; it’s about creating a team that can outlast the competition.</p>
+  <p>With a dynamic mix of managers aiming for both short-term victories and long-term dominance, every season promises a thrilling blend of strategy, rivalry, and excitement.</p>
+  <p>The stakes are high with a prize pool of $180, but the true reward lies in the glory and bragging rights that come with being crowned the league champion.</p>
+  <p>Prove your skills, earn your place in our league’s storied history, and relish the sweet taste of victory.</p>
 `;
 
 /*   STEP 3   */
