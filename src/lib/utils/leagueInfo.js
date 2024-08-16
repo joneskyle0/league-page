@@ -27,7 +27,7 @@ https://github.com/nmelhado/league-page/blob/master/TRAINING_WHEELS.md#ii-adding
 export const managers = [
     {
       "roster": 1,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      "managerID" : "740361247182221312",
+      "managerID": "1104261834015719424",
       "name": "Ace24T",
       // "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -50,6 +50,7 @@ export const managers = [
     },
     {
       "roster": 2,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "managerID": "1105337644382326784",
       "name": "inny100",
       //"tookOver": 2024, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -72,6 +73,7 @@ export const managers = [
     },
     {
       "roster": 3,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "managerID": "731639468343320576",
       "name": "joshb32",
       //"tookOver": 2024, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -94,6 +96,7 @@ export const managers = [
     },
     {
       "roster": 4,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "managerID": "728745905922142208",
       "name": "walkerba",
       // "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -117,6 +120,7 @@ export const managers = [
       {
       "roster": 5,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "joneskyle0",
+      "managerID": "1107901874864447488",
       //"tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "East Lansing", // (optional)
       "bio": "Lorem ipsum...",
@@ -138,6 +142,7 @@ export const managers = [
     },
       {
       "roster": 6,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "managerID": "1108195732206522368",
       "name": "ALoveday",
       "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -160,6 +165,7 @@ export const managers = [
     },
         {
       "roster": 7,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "managerID": "866203266193707008",
       "name": "webird17",
       "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -183,6 +189,7 @@ export const managers = [
         {
       "roster": 8,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "name": "brendon13bouch",
+      "managerID": "869696498177347584",
       "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
       "bio": "Lorem ipsum...",
@@ -204,6 +211,7 @@ export const managers = [
     },
         {
       "roster": 9,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
+      "managerID": 1117273468405374976,
       "name": "jonesz99",
       "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
@@ -226,7 +234,8 @@ export const managers = [
     },
         {
       "roster": 10,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      "name": "jmklein014",
+      "managerID": "
+      "name": "1104262215735021568",
       "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
       "location": "Brooklyn", // (optional)
       "bio": "Lorem ipsum...",
