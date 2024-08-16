@@ -11,7 +11,7 @@ export const homepageText = `
   <p>Whether you’re a shrewd tactician focused on immediate glory or a forward-thinker laying the groundwork for future success, this is the ultimate playground for fantasy football enthusiasts.</p>
   <p>In our league, it’s not just about selecting the best players; it’s about creating a team that can outlast the competition.</p>
   <p>With a dynamic mix of managers aiming for both short-term victories and long-term dominance, every season promises a thrilling blend of strategy, rivalry, and excitement.</p>
-  <p>The stakes are high with a prize pool of $180, but the true reward lies in the glory and bragging rights that come with being crowned the league champion.</p>
+  <p>The stakes are high with a prize pool of $300, but the true reward lies in the glory and bragging rights that come with being crowned the league champion.</p>
   <p>Prove your skills, earn your place in our league’s storied history, and relish the sweet taste of victory.</p>
 `;
 
