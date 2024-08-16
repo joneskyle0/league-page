@@ -225,7 +225,7 @@ export const managers = [
     },
     {
       "roster": 10,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-      "managerID": "1104262215735021568",
+      "managerID": "740361247182221312",
       "name": "jmklein14",
       "location": "Brooklyn", // (optional)
       "bio": "Lorem ipsum...",
