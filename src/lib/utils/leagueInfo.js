@@ -73,9 +73,9 @@ export const managers = [
       "roster": 3,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "managerID": "731639468343320576",
       "name": "joshb32",
-      "location": "Alma, MI", // (optional)
-      "bio": "We’re Costco guys. Of course we’re going to eat a chicken bake while winning the championship. ",
-      "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
+      "location": "The Wall in the North, Westeros", // (optional)
+      "bio": "CEO of ripping mocks in the office. Basketball Coach by day and fantasy manger by night. Will act like losing doesn’t affect me but will secretly cry myself to sleep. Firm believer in the “Go Get Your Guys” philosophy.",
+      "photo": "/managers/jbouc.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2012, // (optional) when did the manager start playing fantasy football
       "favoriteTeam": "det", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
       "mode": null, // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
