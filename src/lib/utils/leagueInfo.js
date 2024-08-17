@@ -29,7 +29,7 @@ export const managers = [
       "roster": 1,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "managerID": "1104261834015719424",
       "name": "Ace24T",
-      "location": "College Station", // (optional)
+      "location": "College Station, TX", // (optional)
       "bio": "This is my first dynasty league and I tried to draft relatively young. Grabbed some rookies and year 2 players I'm excited about, and hopefully they'll come into their own over the next couple years. I'm really optimistic about Penix in a few years, I'm hopeful he can become the next Love or Mahomes. Grabbed some veterans in the later rounds to help round out the team, I'll be sure to pay attention to college ball to find their replacements as they phase out of the NFL",
       "photo": "/managers/ace.png", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2016, // (optional) when did the manager start playing fantasy football
@@ -117,7 +117,7 @@ export const managers = [
       "roster": 5,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "managerID": "1107901874864447488",
       "name": "joneskyle0",
-      "location": "East Lansing", // (optional)
+      "location": "East Lansing, MI", // (optional)
       "bio": "Visionary mastermind behind CTRL+ALT+DEFEAT—where strategy meets wishful thinking. Has knack for drafting under-the-radar stars and a penchant for bad trade offers. When not managing the team, you can find joneskyle0 dreaming up new ways to explain that “next year is our year” mantra.",
       "photo": "/managers/jones2.jpg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2014, // (optional) when did the manager start playing fantasy football
@@ -161,7 +161,7 @@ export const managers = [
       "roster": 7,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "managerID": "866203266193707008",
       "name": "webird17",
-      "location": "Chicago", // (optional)
+      "location": "Chicago, IL", // (optional)
       "bio": "I am in too many leagues. I have spreadsheets to keep track of them.",
       "photo": "/managers/bird.png", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2010, // (optional) when did the manager start playing fantasy football
@@ -227,7 +227,7 @@ export const managers = [
       "roster": 10,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
       "managerID": "740361247182221312",
       "name": "jmklein14",
-      "location": "Chicago", // (optional)
+      "location": "Chicago, IL", // (optional)
       "bio": "Football is fun and so is having JJets 🤠",
       "photo": "/managers/jklein.jpeg", // square ratio recommended (no larger than 500x500)
       "fantasyStart": 2017, // (optional) when did the manager start playing fantasy football
