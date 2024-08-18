@@ -185,7 +185,7 @@
 
     <h3 class="subSectionHeading" bind:this={oneTwo}>1.2 Trading</h3>
     
-    <p>Trading of players and draft picks (up to 3 drafts away) are allowed. Trades will process immediately and will be reversed if vetoed or under investigation for collusion. Tradable assets include players and draft picks.</p>
+    <p>Trading of players and draft picks (up to 3 drafts away) are allowed. Trades will process two days after all sides agree. Tradable assets include players and draft picks.</p>
     
     <h4 bind:this={oneTwoOne}>1.2.1 Trade Collusion</h4>
     <div class="subBlock">
@@ -211,7 +211,7 @@
     
     <h4 bind:this={oneTwoThree}>1.2.3 Trade Deadline</h4>
     <div class="subBlock">
-        <p>The trade deadline will be set for the Saturday of the week 11 games of the NFL season.</p>
+        <p>The trade deadline will be set for the Saturday of the week 12 games of the NFL season.</p>
     </div>
     
     <h4 bind:this={oneTwoFour}>1.2.4 Trade Restrictions</h4>
@@ -228,7 +228,7 @@
     
     <h3 bind:this={oneThree}>1.3 Waiver Wire</h3>
     
-    <p>Traditional Waiver wire system. The last pick of the first round of each draft will have highest waiver priority to begin the season. Waivers will process Thursdays and Sundays at 9AM EST.</p>
+    <p>Traditional Waiver wire system. The last pick of the first round of each draft will have highest waiver priority to begin the season. Waivers will process Wednesday at 3 AM EDT and Sundays at 9AM EST.</p>
     
     
     <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
@@ -246,7 +246,7 @@
     <h2 class="sectionHeading" bind:this={three}>Section 3 Scoring System</h2>
 
     <h3 bind:this={threeOne}>3.1 Scoring System</h3>
-    <p>The league scoring system breakdown is listed on the Sleeper fantasy app (for the most part, it follows typical .5PPR Scoring). The scoring system will never change without a majority league vote.</p>
+    <p>The league scoring system breakdown is listed on the Sleeper fantasy app (for the most part, it follows typical PPR Scoring with a bonus for first downs). The scoring system will never change without a majority league vote.</p>
     
     <h2 class="sectionHeading" bind:this={four}>Section 4 Postseason</h2>
     
