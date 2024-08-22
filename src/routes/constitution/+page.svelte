@@ -165,7 +165,7 @@
         <li>SUPERFLEX (QB/RB/WR/TE)</li>
     </ul>
     
-    <p>15 Bench (Expanded by 5 between the league draft and start of regular season)</p>
+    <p>12 Bench</p>
 
     <p>2 IR Spots (Player must be labeled as IR, Out, or Covid in the Sleeper App)</p>
     
@@ -173,12 +173,10 @@
         
         <div class="subBlock">
             <table class="positionMaximums">
-                <tr><td>QB</td><td class="right">3 active, 5 total</td></tr>
-                <tr><td>RB</td><td class="right">20</td></tr>
-                <tr><td>WR</td><td class="right">20</td></tr>
-                <tr><td>TE</td><td class="right">10</td></tr>
-                <tr><td>D/ST</td><td class="right">3</td></tr>
-                <tr><td>K</td><td class="right">3</td></tr>
+                <tr><td>QB</td><td class="right">No Limit</td></tr>
+                <tr><td>RB</td><td class="right">No Limit</td></tr>
+                <tr><td>WR</td><td class="right">No Limit</td></tr>
+                <tr><td>TE</td><td class="right">No Limit</td></tr>
             </table>
         </div>
 
