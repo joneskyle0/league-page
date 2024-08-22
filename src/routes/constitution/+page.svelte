@@ -1,6 +1,6 @@
 <script>
     import { dues } from '$lib/utils/helper';
-    let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree;
+    let one, oneOne, oneOneOne, oneOneTwo, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree;
     let two, twoOne, twoTwo, twoThree;
     let three, threeOne;
     let four, fourOne, fourTwo;
@@ -102,7 +102,8 @@
     
     <h3 class="noUnderscore clickable" on:click={() => goToSection(one)}>Section 1: Roster</h3>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneOne)}>1.1 Positional Breakdown</h4>
-            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneOneOne)}>1.1.1 Position Maximums</h5>
+            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneOneOne)}>1.1.1 Taxi Squad</h5>
+            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneOneTwo)}>1.1.2 Position Maximums</h5>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneTwo)}>1.2 Trading</h4>
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoOne)}>1.2.1 Trade Collusion</h5>
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoTwo)}>1.2.2 Lending Players Prohibition</h5>
@@ -170,8 +171,12 @@
     <p>3 Taxi Squad</p>
 
     <p>2 IR Spots (Player must be labeled as IR, Out, or Covid in the Sleeper App)</p>
+
+        <h4 bind:this={oneOneOne}>1.1.1 Taxi Squad</h4>
+
+        <p>The Taxi Squad may have up to 3 first year players on it. During the off-season, players can freely be moved on and off the taxi squad. Once the season begins, no players may be added to the player squad, though players may be moved from the taxi squad, to the bench.</p>
     
-        <h4 bind:this={oneOneOne}>1.1.1 Position Maximums</h4>
+        <h4 bind:this={oneOneOne}>1.1.2 Position Maximums</h4>
         
         <div class="subBlock">
             <table class="positionMaximums">
