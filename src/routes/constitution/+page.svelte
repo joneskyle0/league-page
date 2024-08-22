@@ -149,7 +149,7 @@
     
     <h3 class="subSectionHeading" bind:this={oneOne}>1.1 Positional Breakdown</h3>
     
-    <p>28 Total Players</p>
+    <p>25 Total Players</p>
     
     <p class="underscore">Starters</p>
     <ul>
@@ -167,6 +167,8 @@
     
     <p>12 Bench</p>
 
+    <p>3 Taxi Squad</p>
+
     <p>2 IR Spots (Player must be labeled as IR, Out, or Covid in the Sleeper App)</p>
     
         <h4 bind:this={oneOneOne}>1.1.1 Position Maximums</h4>
@@ -179,7 +181,6 @@
                 <tr><td>TE</td><td class="right">No Limit</td></tr>
             </table>
         </div>
-
 
     <h3 class="subSectionHeading" bind:this={oneTwo}>1.2 Trading</h3>
     
