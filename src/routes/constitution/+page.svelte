@@ -176,7 +176,7 @@
 
         <p>The Taxi Squad may have up to 3 first year players on it. During the off-season, players can freely be moved on and off the taxi squad. Once the season begins, no players may be added to the player squad, though players may be moved from the taxi squad, to the bench.</p>
     
-        <h4 bind:this={oneOneOne}>1.1.2 Position Maximums</h4>
+        <h4 bind:this={oneOneTwo}>1.1.2 Position Maximums</h4>
         
         <div class="subBlock">
             <table class="positionMaximums">
