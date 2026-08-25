@@ -7,10 +7,10 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Welcome to the NFL Dynasty League, a ten-team league founded in 2024 by commissioner Ace24T and built for the long haul.</p>
-  <p>Now entering our third season, every rookie pick, waiver claim, and blockbuster trade adds another chapter to the league’s history. Some managers are chasing the title today; others are building the roster everyone will fear tomorrow.</p>
-  <p>With a $30 buy-in, a $300 prize pool, and a full year of bragging rights on the line, every matchup matters—but the real goal is creating a dynasty that lasts.</p>
-  <p>This site is our league’s permanent home for rosters, power rankings, trades, records, champions, and the rivalries that make fantasy football worth playing.</p>
+  <p>Welcome to the NFL Dynasty League, a ten-team league founded in 2024 and held together by fantasy football, a few friendships, a few family connections, and a group of people who mostly do not know each other in real life.</p>
+  <p>The league is only semi-serious. A few managers treat every waiver claim like a front-office decision, while a few others may or may not remember to check their lineup. Somehow, it works.</p>
+  <p>There is a $30 buy-in, a $300 prize pool, and just enough money and bragging rights on the line to keep things interesting. Some teams are chasing a championship, some are rebuilding, and some are simply seeing what happens.</p>
+  <p>This site keeps track of the rosters, trades, records, champions, power rankings, and whatever rivalries develop along the way.</p>
 `;
 
 /*   STEP 3   */
