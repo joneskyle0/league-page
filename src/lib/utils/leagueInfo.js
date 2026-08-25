@@ -7,12 +7,10 @@ export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VI
 
 /*   STEP 2   */
 export const homepageText = `
-  <p>Welcome to the Dynasty Fantasy Football League, where strategy meets legacy! Founded in 2024 by the visionary commissioner Ace24T, our league boasts ten dedicated managers who each bring their unique approach to building a championship-caliber team.</p>
-  <p>Whether you’re a shrewd tactician focused on immediate glory or a forward-thinker laying the groundwork for future success, this is the ultimate playground for fantasy football enthusiasts.</p>
-  <p>In our league, it’s not just about selecting the best players; it’s about creating a team that can outlast the competition.</p>
-  <p>With a dynamic mix of managers aiming for both short-term victories and long-term dominance, every season promises a thrilling blend of strategy, rivalry, and excitement.</p>
-  <p>The stakes are high with a prize pool of $300, but the true reward lies in the glory and bragging rights that come with being crowned the league champion.</p>
-  <p>Prove your skills, earn your place in our league’s storied history, and relish the sweet taste of victory.</p>
+  <p>Welcome to the NFL Dynasty League, a ten-team league founded in 2024 by commissioner Ace24T and built for the long haul.</p>
+  <p>Now entering our third season, every rookie pick, waiver claim, and blockbuster trade adds another chapter to the league’s history. Some managers are chasing the title today; others are building the roster everyone will fear tomorrow.</p>
+  <p>With a $30 buy-in, a $300 prize pool, and a full year of bragging rights on the line, every matchup matters—but the real goal is creating a dynasty that lasts.</p>
+  <p>This site is our league’s permanent home for rosters, power rankings, trades, records, champions, and the rivalries that make fantasy football worth playing.</p>
 `;
 
 /*   STEP 3   */
