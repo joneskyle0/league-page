@@ -1,4 +1,3 @@
-import { waitForAll } from './multiPromise';
 import { get } from 'svelte/store';
 import {news} from '$lib/stores';
 import { dynasty } from '$lib/utils/leagueInfo';
@@ -21,8 +20,21 @@ export const getNews = async (servFetch, bypass = false) => {
 		newsSources.push(getFeed(REDDIT_FANTASY, processReddit));
 	}
 
-	const [serverRes, reddit] = await waitForAll(...newsSources).catch((err) => { console.error(err); });
-	const serverData = await serverRes.json().catch((err) => { console.error(err); });
+	const [serverResult, redditResult] = await Promise.allSettled(newsSources);
+	let serverData = [];
+	let reddit = [];
+
+	if(serverResult.status === 'fulfilled' && serverResult.value.ok) {
+		const parsedServerData = await serverResult.value.json().catch((err) => {
+			console.warn(err);
+			return [];
+		});
+		serverData = Array.isArray(parsedServerData) ? parsedServerData : [];
+	}
+
+	if(redditResult?.status === 'fulfilled') {
+		reddit = redditResult.value;
+	}
 
 	const articles = [...reddit, ...serverData].sort((a, b) => (a.ts < b.ts) ? 1 : -1);
 	news.update(() => articles);
@@ -31,15 +43,15 @@ export const getNews = async (servFetch, bypass = false) => {
 }
 
 const getFeed = async (feed, callback) => {
-	const res = await fetch(feed, {compress: true}).catch((err) => { console.error(err); });
-    
-	const data = await res.json().catch((err) => { console.error(err); });
-	
-	if (res.ok && data && data.data) {
-		return callback(data.data);
-	} else {
-		console.error(data);
-        return [];
+	try {
+		const res = await fetch(feed, {compress: true});
+		if(!res.ok) return [];
+
+		const data = await res.json();
+		return data?.data ? callback(data.data) : [];
+	} catch(err) {
+		console.warn(err);
+		return [];
 	}
 }
 
@@ -65,7 +77,7 @@ const processReddit = (rawArticles) => {
 		}
 		const ts = data.created_utc * 1000;
 		const d = new Date(ts);
-		const icon = !bannedIcons.includes(data.thumbnail) ? data.thumbnail : `newsIcons/${data.subreddit}.png`;
+		const icon = !bannedIcons.includes(data.thumbnail) ? data.thumbnail : `/newsIcons/${data.subreddit}.png`;
 		const date = stringDate(d);
 		let article = `<a href="${data.url}" class="body-link">${data.url}</a>`;
 		if(data.selftext_html) {

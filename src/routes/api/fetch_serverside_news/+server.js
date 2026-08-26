@@ -1,5 +1,4 @@
 import {XMLParser, XMLValidator} from 'fast-xml-parser';
-import { waitForAll } from '$lib/utils/helperFunctions/multiPromise';
 import { dynasty } from '$lib/utils/helper';
 import { json } from '@sveltejs/kit';
 
@@ -15,28 +14,30 @@ export async function GET() {
 		articles.push(getXMLArticles(DYNASTY_LEAGUE, processDynastyLeague));
 		articles.push(getXMLArticles(DYNASTY_NERDS, processDynastyNerds));
 	}
-    const responses = await waitForAll(...articles).catch((err) => { console.error(err); });
-
-	let finalArticles = [];
-
-	for(const response of responses) {
-		finalArticles = [...finalArticles, ...response];
-	}
+    const responses = await Promise.allSettled(articles);
+	const finalArticles = responses.flatMap((response) =>
+		response.status === 'fulfilled' ? response.value : []
+	);
 
     return json(finalArticles);
 }
 
 const getXMLArticles = async(url, callback) => {
-    const res = await fetch(url, {compress: true}).catch((err) => { console.error(err); });
-    const text = await res.text().catch((err) => { console.error(err); });
+	try {
+		const res = await fetch(url, {compress: true});
+		if(!res.ok) return [];
 
-    let xmlData;
-    if(XMLValidator.validate(text) === true){
-        const parser = new XMLParser();
-        xmlData = parser.parse(text);
-    }
-    
-    return callback(xmlData.rss.channel.item);
+		const text = await res.text();
+		if(XMLValidator.validate(text) !== true) return [];
+
+		const parser = new XMLParser();
+		const xmlData = parser.parse(text);
+		const items = xmlData?.rss?.channel?.item;
+		return items ? callback(items) : [];
+	} catch(err) {
+		console.error(err);
+		return [];
+	}
 }
 
 const processFF = (articles) => {
@@ -45,7 +46,7 @@ const processFF = (articles) => {
 		const ts = Date.parse(article.pubDate);
 		const d = new Date(ts);
 		const date = stringDate(d);
-		const icon = 'newsIcons/ffballers.jpeg';
+		const icon = '/newsIcons/ffballers.jpeg';
 		finalArticles.push({
 			title: article.title,
 			article: article.description,
@@ -68,7 +69,7 @@ const processFTN = (rawArticles) => {
 		const ts = Date.parse(article.datetime);
 		const d = new Date(ts);
 		const date = stringDate(d);
-		const icon = 'newsIcons/ftn.png';
+		const icon = '/newsIcons/ftn.png';
 		finalArticles.push({
 			title: article.short_text,
 			article: article.text,
@@ -88,7 +89,7 @@ const processDynastyLeague = (articles) => {
 		const ts = Date.parse(article.pubDate);
 		const d = new Date(ts);
 		const date = stringDate(d);
-		const icon = 'newsIcons/dynastyLeague.png';
+		const icon = '/newsIcons/dynastyLeague.png';
 		finalArticles.push({
 			title: article.title,
 			article: article.description,
@@ -108,7 +109,7 @@ const processDynastyNerds = (articles) => {
 		const ts = Date.parse(article.pubDate);
 		const d = new Date(ts);
 		const date = stringDate(d);
-		const icon = 'newsIcons/dynastyNerds.jpeg';
+		const icon = '/newsIcons/dynastyNerds.jpeg';
 		finalArticles.push({
 			title: article.title,
 			article: article.description,
